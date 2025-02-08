@@ -1,0 +1,61 @@
+/* https://noonnu.cc/ */
+@font-face {
+  font-family: "Danjo-bold-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Danjo-bold-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "Danjo-bold-Regular";
+}
+
+/* 공통 전환 효과 */
+.transition {
+  transition: all 0.3s ease-in-out;
+}
+/* 초기 로딩 이미지 컨테이너 */
+#loadingScreen {
+  transition: background-color 2s ease-in-out;
+  z-index: 0;
+  background-color: #111;
+}
+#imageWrapper {
+  width: 480px;
+  height: 270px;
+  transition: all 2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* 결과 페이지: 개선된 스크롤 처리 */
+#resultSection {
+  transition: all 1s ease-in-out;
+  max-height: 100vh;
+  overflow-y: auto;
+  padding: 2rem 0;
+}
+/* 결과 콘텐츠 컨테이너 */
+#resultContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+/* 메인 폼 */
+#mainForm {
+  transition: opacity 1s ease-in-out;
+  transition-delay: 1.5s;
+  position: relative;
+}
+/* 스크롤바 스타일링 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
